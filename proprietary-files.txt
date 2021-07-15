@@ -470,14 +470,41 @@ vendor/firmware/wifi.cfg
 vendor/firmware/WIFI_RAM_CODE_soc1_0_1_1.bin
 vendor/firmware/WMT_SOC.cfg
 
-# GPS
-vendor/bin/hw/vendor.mediatek.hardware.gnss@1.1-service
-vendor/etc/init/vendor.mediatek.hardware.gnss@1.1-service.rc
-vendor/lib/hw/gps.default.so
-vendor/lib/libgeofence.so
-vendor/lib64/hw/gps.default.so
-vendor/lib64/hw/vendor.mediatek.hardware.gnss@1.1-impl.so
-vendor/lib64/vendor.mediatek.hardware.gnss@1.1.so
+# GPS - from full_v7101o-user 10 QP1A.190711.020 q0mp1t1v1001bsp release-keys
+vendor/bin/hw/android.hardware.gnss@2.0-service-mediatek|df0b40ea71db8d0b9e2d0419163d9b41f3ea1c4a
+vendor/bin/charon|6e5677939f002801887becdfaf661784253b8462
+vendor/bin/ipsec_mon|ca6a447a373e5e125ee74291630df73fd9a793be
+vendor/bin/lbs_hidl_service|84341491f8c95a32d7f0856a44491c04920c187f
+vendor/bin/mnld|c2e79312a2f41c4fd37f65339a2d4ee92262a976
+vendor/bin/mtk_agpsd|9c35c3315683ce9e66074c65ac6eeec7b015cd9f
+vendor/bin/starter|4c1c13ffce964280ac282fe77715090b04050e6b
+vendor/bin/stroke|99782ea47edca9df9fcc9f4842ee0e64e877233b
+vendor/etc/init/android.hardware.gnss@2.0-service-mediatek.rc|5b2557a9bbd8883da02f5a790d5172c428de8ea6
+vendor/etc/init/ipsec_mon.rc|4ce4285571810f6aed38ce1db4f60a6b35a637f0
+vendor/etc/init/lbs_hidl_service.rc|fb88d4559374ae12dc8a9513189b6c6ff1a33bde
+vendor/etc/init/mtk_agpsd_p.rc|305c5521d2e9a4d4be7abcc211611b984a0a44d9
+vendor/etc/agps_profiles_conf2.xml|2719265a2e3065127e006054f3d16ef17d684c5e
+vendor/etc/slp_conf|8e0eeb966b5f1f2d506342aae276cbf3cd115039
+vendor/lib/hw/flp.default.so|0e9b40d07c3a0a8df35dc0464d57ab66a713db5f
+vendor/lib/hw/gps.default.so|a229aef51adcc0fc48937d50e2c314975e8f8e69
+vendor/lib/libDR.so|dc060a15256c0fb28586349c5fbed273d59e2feb
+vendor/lib/libcharon-ss.so|d559a8093b615113eaf9d5dd407f6d96c3c9ca16
+vendor/lib/libgeofence.so|fc4dbe06aaa6247874a7c275faab3f5930454ac5
+vendor/lib/libhydra.so|7f706f0062922ef6c966523c94a70a02b97fa7fd
+vendor/lib/libipsec_ims_shr.so|43534db4a27917eb7de5b48bf724d453d057ca80
+vendor/lib/libmnl.so|ffd36aea6d35bd791d3edbaaaab3f491f4d96e32
+vendor/lib/libsimaka.so|dbfd40a1a587ce03028ef572b69110bc5e1790b8
+vendor/lib/libstrongswan.so|8106d7a03bc7bb80848a5d2348760a5eed41e1e5
+vendor/lib64/hw/android.hardware.gnss@2.0-impl-mediatek.so|6e7d4030c6a58ccf28e0e5f64ac489346fb8d408
+vendor/lib64/hw/flp.default.so|4723e72aece3b035bf54c3dc7302f51bce346eb8
+vendor/lib64/hw/gps.default.so|70f7f641fc90b5c42376459aea55042bf08c8470
+vendor/lib64/lbs_hidl_service-impl.so|ceb25f518e72a3b14a87ae2b42e9fc4841ac7dae
+vendor/lib64/libcharon-ss.so|4c3720c6cc9ef75acf91c23624ef484b35a4e4e5
+vendor/lib64/libhydra.so|d4b2e8f48c58621872971768ed4fbdd986f16ca8
+vendor/lib64/libipsec_ims_shr.so|0ae207080ae5932fd10a91a4eeca3333ba1188d2
+vendor/lib64/libsimaka.so|5fb9c08c0ee339740b24f30088a29369ed302520
+vendor/lib64/libstrongswan.so|1a092dd646e731c4eb2d51c73515a6e0ff9be4b4
+vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so|a3201e600725263aa0ea54713b54811d940d67bc
 
 # Graphics
 vendor/lib/egl/egl.cfg
@@ -655,7 +682,6 @@ vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 vendor/lib64/vendor.mediatek.hardware.dfps@1.0.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
-vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.1.so
@@ -838,7 +864,6 @@ vendor/bin/factory
 vendor/bin/fuelgauged
 vendor/bin/loghidlvendorservice
 vendor/bin/meta_tst
-vendor/bin/mnld
 vendor/bin/nvram_daemon
 vendor/bin/self-init
 vendor/bin/wlan_assistant
@@ -885,7 +910,6 @@ vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/bip
-vendor/bin/charon
 vendor/bin/dconfig
 vendor/bin/dtc_vendor
 vendor/bin/em_hidl
@@ -900,9 +924,7 @@ vendor/bin/hw/vendor.trustonic.tee@1.0-service
 vendor/bin/hw/vendor.trustonic.teeregistry@1.0-service
 vendor/bin/hw/vendor_transfer
 vendor/bin/hw/vtservice_hidl
-vendor/bin/ipsec_mon
 vendor/bin/jpegtool
-vendor/bin/lbs_hidl_service
 vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
 vendor/bin/libccu_gc2375h_ly_mipi_raw.dm
@@ -922,15 +944,12 @@ vendor/bin/libccu_sp2509v_mipi_raw.pm
 vendor/bin/mcDriverDaemon
 vendor/bin/mrdump_tool
 vendor/bin/mtkcam-debug
-vendor/bin/mtk_agpsd
 vendor/bin/muxreport
 vendor/bin/netdagent
 vendor/bin/netdc
 vendor/bin/nusensors
 vendor/bin/rpmbengclient_test
 vendor/bin/rttv
-vendor/bin/starter
-vendor/bin/stroke
 vendor/bin/TBaseDeviceBinding
 vendor/bin/volte_imcb
 vendor/bin/volte_imsm_93
@@ -942,7 +961,6 @@ vendor/bin/wmt_fdb
 vendor/bin/wmt_loopback
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
-vendor/etc/agps_profiles_conf2.xml
 vendor/etc/ams_aal_config.xml
 vendor/etc/asd/class.tflite
 vendor/etc/asd/detect.tflite
@@ -995,11 +1013,7 @@ vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/init_connectivity.rc
-vendor/etc/init/ipsec_mon.rc
-vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/loghidlvendorservice.rc
-vendor/etc/init/mtk_agpsd.rc
-vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/init/muxreport.rc
 vendor/etc/init/netdagent.rc
 vendor/etc/init/nvram_daemon.rc
@@ -1057,7 +1071,6 @@ vendor/etc/security/ck.fs
 vendor/etc/security/pl.fs
 vendor/etc/self_init_config/common/self_init_config.xml
 vendor/etc/skinSeg.model
-vendor/etc/slp_conf
 vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
 vendor/etc/spn-conf-op09.xml
@@ -1075,7 +1088,6 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 vendor/lib/android.frameworks.faceservice@1.0.so
 vendor/lib/hi556_mipi_raw_tuning.so
 vendor/lib/hw/dfps.mt6765.so
-vendor/lib/hw/flp.default.so
 vendor/lib/hw/kmsetkey.trustonic.so
 vendor/lib/hw/libMcGatekeeper.so
 vendor/lib/hw/libSoftGatekeeper.so
@@ -1095,14 +1107,12 @@ vendor/lib/libBnMtkCodec.so
 vendor/lib/libbwc.so
 vendor/lib/libcarrierconfig.so
 vendor/lib/libccci_util.so
-vendor/lib/libcharon-ss.so
 vendor/lib/libcrypto-ss.so
 vendor/lib/libcurl-ss.so
 vendor/lib/libcurl_xcap_md.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libcvsd_mtk.so
 vendor/lib/libdpframework.so
-vendor/lib/libDR.so
 vendor/lib/libffmpeg_utils.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libfile_op.so
@@ -1119,11 +1129,9 @@ vendor/lib/libh264enc_sa.ca7.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libhwm.so
-vendor/lib/libhydra.so
 vendor/lib/libIMGegl.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib/libipsec_ims_shr.so
 vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libJpgDecPipe.so
@@ -1134,7 +1142,6 @@ vendor/lib/libmemtrack_GL.so
 vendor/lib/libmhalImageCodec.so
 vendor/lib/libminiui.so
 vendor/lib/libmmprofile.so
-vendor/lib/libmnl.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libmrdumpv.so
@@ -1155,7 +1162,6 @@ vendor/lib/libPVRScopeServices.so
 vendor/lib/libreverb.so
 vendor/lib/librgbwlightsensor.so
 vendor/lib/librpmbengclient.so
-vendor/lib/libsimaka.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libsrv_um.so
@@ -1163,7 +1169,6 @@ vendor/lib/libssl-ss.so
 vendor/lib/libstagefright_soft_voh264enc.so
 vendor/lib/libstfaceunlockocl.so
 vendor/lib/libstorage_otp.so
-vendor/lib/libstrongswan.so
 vendor/lib/libSwJpgCodec.so
 vendor/lib/libswresample.so
 vendor/lib/libswscale.so
@@ -1200,11 +1205,9 @@ vendor/lib64/hi1336_mipi_raw_tuning.so
 vendor/lib64/hi556_mipi_raw_IdxMgr.so
 vendor/lib64/hi556_mipi_raw_tuning.so
 vendor/lib64/hw/dfps.mt6765.so
-vendor/lib64/hw/flp.default.so
 vendor/lib64/hw/kmsetkey.trustonic.so
 vendor/lib64/hw/libMcGatekeeper.so
 vendor/lib64/hw/libSoftGatekeeper.so
-vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/lib3a.ae.core.so
 vendor/lib64/lib3a.ae.so
 vendor/lib64/lib3a.af.core.so
@@ -1238,7 +1241,6 @@ vendor/lib64/libbwc.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
-vendor/lib64/libcharon-ss.so
 vendor/lib64/libcrypto-ss.so
 vendor/lib64/libcurl-ss.so
 vendor/lib64/libcurl_xcap_md.so
@@ -1267,7 +1269,6 @@ vendor/lib64/libgralloc_extra.so
 vendor/lib64/libhdrproc.so
 vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libhwm.so
-vendor/lib64/libhydra.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libimageio.so
 vendor/lib64/libimageio_plat_drv.so
@@ -1275,7 +1276,6 @@ vendor/lib64/libimageio_plat_pipe.so
 vendor/lib64/libIMGegl.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libJpgEncPipe.so
@@ -1313,7 +1313,6 @@ vendor/lib64/libreverb.so
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/librilfusion.so
 vendor/lib64/librpmbengclient.so
-vendor/lib64/libsimaka.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libsrv_um.so
@@ -1322,7 +1321,6 @@ vendor/lib64/libstagefright_soft_voh264enc.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/libstface_fd_api.so
 vendor/lib64/libstface_seg_ocl.so
-vendor/lib64/libstrongswan.so
 vendor/lib64/libswresample.so
 vendor/lib64/libswscale.so
 vendor/lib64/libTBaseProvisioning.so
