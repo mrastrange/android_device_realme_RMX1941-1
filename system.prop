@@ -6,10 +6,6 @@ ro.build.keystore.path=/sdcard/.lii/
 # system.prop for generic sdk
 #
 
-vendor.rild.libpath=mtk-ril.so
-vendor.rild.libargs=-d /dev/ttyC0
-
-
 # MTK, Infinity, 20090720 {
 wifi.interface=wlan0
 # MTK, Infinity, 20090720 }
