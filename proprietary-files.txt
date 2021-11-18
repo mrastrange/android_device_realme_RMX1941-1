@@ -1,4 +1,7 @@
 
+# AEE - from Redmi/ares/ares:12/SP1A.210812.016/21.11.8:user/release-keys
+vendor/lib64/libudf.so|f57a4f63592b62c2de72b377021327756fc5fac1
+
 # ADSP
 vendor/lib64/libadsprpc.so
 
