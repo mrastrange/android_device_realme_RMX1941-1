@@ -82,6 +82,9 @@ function blob_fixup() {
             vendor/lib64/hw/libSoftGatekeeper.so)
             "${PATCHELF}" --replace-needed "libgatekeeper.so" "libgatekeeper-v28.so" "${2}"
             ;;
+            vendor/lib/libmtkcam_stdutils.so|vendor/lib64/libmtkcam_stdutils.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v29.so" "${2}"
+            ;;
     esac
 }
 
