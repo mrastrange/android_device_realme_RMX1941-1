@@ -79,6 +79,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v28.so" "${2}"
             "${PATCHELF}" --replace-needed "libxml2.so" "libxml2-v28.so" "${2}"
             ;;
+            vendor/lib64/hw/libSoftGatekeeper.so)
+            "${PATCHELF}" --replace-needed "libgatekeeper.so" "libgatekeeper-v28.so" "${2}"
+            ;;
     esac
 }
 
