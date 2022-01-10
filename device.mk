@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.mt6765
 
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     engineer_vendor_shell.sh \
