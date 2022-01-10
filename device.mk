@@ -126,11 +126,27 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.target.rc \
-    init.safailnet.rc \
+    engineer_vendor_shell.sh \
+    init.oppo.fingerprints.sh \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6765.rc \
+    init.mt6765.usb.rc \
+    init.oppo.reserve.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc \
     fstab.mt6765 \
-    perf_profile.sh \
-    set_zram.sh
+    ueventd.qcom.rc
 
 # RcsService
 PRODUCT_PACKAGES += \
