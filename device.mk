@@ -50,6 +50,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CameraGo
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
