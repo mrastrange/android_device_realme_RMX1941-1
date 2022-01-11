@@ -502,11 +502,6 @@ vendor/lib64/egl/libGLESv1_CM_mtk.so
 vendor/lib64/egl/libGLESv2_mtk.so
 vendor/lib64/libOpenCL.so
 
-# Health
-vendor/bin/hw/android.hardware.health@2.0-service
-vendor/bin/hw/android.hardware.health@2.0-service.override
-vendor/etc/init/android.hardware.health@2.0-service.rc
-
 # Keymaster
 recovery/ramdisk/sbin/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
 recovery/ramdisk/sbin/vendor/lib64/hw/libMcTeeKeymaster.so
