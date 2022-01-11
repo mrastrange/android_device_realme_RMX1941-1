@@ -9,8 +9,6 @@ import /vendor/etc/init/trustonic.rc
 import ${ro.vendor.rc}init.nvdata.rc
 import /vendor/etc/init/microtrust.rc
 import /vendor/etc/init/trustkernel.rc
-import /vendor/etc/init/hw/init.aee.rc
-import /system/etc/init/hw/init.aee.rc
 import /vendor/etc/init/hw/factory_init.project.rc
 
 on early-init
