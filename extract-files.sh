@@ -54,6 +54,13 @@ done
 if [ -z "$SRC" ]; then
     SRC=adb
 fi
+function blob_fixup() {
+    case "${1}" in
+            vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so)
+            "${PATCHELF}" --replace-needed "android.hardware.audio.common@4.0-util.so" "android.hardware.audio.common@4.0-util-v28.so" "${2}"
+            ;;
+    esac
+}
 
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$AOSP_ROOT" false "$CLEAN_VENDOR"
