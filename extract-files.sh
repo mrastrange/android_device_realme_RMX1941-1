@@ -58,6 +58,7 @@ function blob_fixup() {
     case "${1}" in
 	    vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek)
             "${PATCHELF}" --add-needed "libcompiler_rt.so" "${2}"
+	    "${PATCHELF}" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
 	    ;;
             vendor/bin/hw/hostapd)
 	    "${PATCHELF}" --add-needed "libcompiler_rt.so" "${2}"
