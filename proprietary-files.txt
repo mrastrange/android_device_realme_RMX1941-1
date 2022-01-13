@@ -559,20 +559,6 @@ vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtknetutils.so
-vendor/lib/libMtkOmxAdpcmDec.so
-vendor/lib/libMtkOmxAdpcmEnc.so
-vendor/lib/libMtkOmxAlacDec.so
-vendor/lib/libMtkOmxApeDec.so
-vendor/lib/libMtkOmxCore.so
-vendor/lib/libMtkOmxG711Dec.so
-vendor/lib/libMtkOmxGsmDec.so
-vendor/lib/libMtkOmxMp3Dec.so
-vendor/lib/libMtkOmxRawDec.so
-vendor/lib/libMtkOmxVdecEx.so
-vendor/lib/libMtkOmxVenc.so
-vendor/lib/libMtkOmxVorbisEnc.so
-vendor/lib/libMtkOmxWmaDec.so
-vendor/lib/libMtkOmxWmaProDec.so
 vendor/lib/libmtkproperty.so
 vendor/lib/libmtkrillog.so
 vendor/lib/libmtkshifter_vendor.so
@@ -662,7 +648,6 @@ vendor/lib64/libmtkhardware_legacy.so
 vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtknetcap.so
 vendor/lib64/libmtknetutils.so
-vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libmtkproperty.so
 vendor/lib64/libmtkrillog.so
 vendor/lib64/libmtkrilutils.so
@@ -714,6 +699,26 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.hostapd@2.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
+
+# OMX
+vendor/etc/mtk_omx_core.cfg
+vendor/lib/libffmpeg_omx.so
+vendor/lib/libMtkOmxAdpcmDec.so
+vendor/lib/libMtkOmxAdpcmEnc.so
+vendor/lib/libMtkOmxAlacDec.so
+vendor/lib/libMtkOmxApeDec.so
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxG711Dec.so
+vendor/lib/libMtkOmxGsmDec.so
+vendor/lib/libMtkOmxMp3Dec.so
+vendor/lib/libMtkOmxRawDec.so
+vendor/lib/libMtkOmxVdecEx.so|8fcf3bc14f2f2f60e85a3a3f60223cc71c66a325
+vendor/lib/libMtkOmxVenc.so
+vendor/lib/libMtkOmxVorbisEnc.so
+vendor/lib/libMtkOmxWmaDec.so
+vendor/lib/libMtkOmxWmaProDec.so
+vendor/lib64/libffmpeg_omx.so
+vendor/lib64/libMtkOmxCore.so
 
 # Oppo
 vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service
@@ -1020,7 +1025,6 @@ vendor/etc/mddb/MDDB.META.ODB_MT6765_S00_MOLY_LR12A_R2_PIE_P22_PR2_TC16_SP_V1_P1
 vendor/etc/mddb/MDDB.META_MT6765_S00_MOLY_LR12A_R2_PIE_P22_PR2_TC16_SP_V1_P18_1_ulwctg_n.EDB
 vendor/etc/mddb/MDDB_InfoCustomAppSrcP_MT6765_S00_MOLY_LR12A_R2_PIE_P22_PR2_TC16_SP_V1_P18_1_ulwctg_n.EDB
 vendor/etc/mddb/mdm_layout_desc_1_ulwctg_n.dat
-vendor/etc/mtk_omx_core.cfg
 vendor/etc/ncf_pack.ncf
 vendor/etc/permissions/pms_sysapp_removable_vendor_list.txt
 vendor/etc/powercontable.cfg
@@ -1097,7 +1101,6 @@ vendor/lib/libcustom_nvram.so
 vendor/lib/libcvsd_mtk.so
 vendor/lib/libdpframework.so
 vendor/lib/libDR.so
-vendor/lib/libffmpeg_omx.so
 vendor/lib/libffmpeg_utils.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libfile_op.so
@@ -1250,7 +1253,6 @@ vendor/lib64/libfeature_eis.so
 vendor/lib64/libfeature_fsc.so
 vendor/lib64/libfeature_lmv.so
 vendor/lib64/libfeature_rss.so
-vendor/lib64/libffmpeg_omx.so
 vendor/lib64/libffmpeg_utils.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libfile_op.so
