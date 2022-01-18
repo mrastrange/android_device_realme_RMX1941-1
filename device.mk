@@ -35,6 +35,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@4.0-util.vendor \
     android.hardware.audio.effect@4.0-impl \
     android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.soundtrigger@2.0.vendor \
+    android.hardware.soundtrigger@2.1.vendor \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.r_submix.default \
