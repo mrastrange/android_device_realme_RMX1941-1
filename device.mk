@@ -123,6 +123,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# GPS
+PRODUCT_PACKAGES += \
+    libandroid_net \
+    libcurl
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
