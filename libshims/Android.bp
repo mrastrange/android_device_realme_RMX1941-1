@@ -1,0 +1,5 @@
+cc_library_shared {
+    name: "libshim_nvram",
+    srcs: ["libshim_nvram.cpp"],
+    vendor: true,
+}

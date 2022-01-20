@@ -88,6 +88,9 @@ function blob_fixup() {
             vendor/bin/hw/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
+            vendor/lib64/libnvram.so)
+            "${PATCHELF}" --add-needed "libshim_nvram.so" "${2}"
+            ;;
     esac
 }
 
