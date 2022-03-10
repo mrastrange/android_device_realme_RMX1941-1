@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/xdroid_RMX1941.mk
+	$(LOCAL_DIR)/ssos_RMX1941.mk
 
 COMMON_LUNCH_CHOICES := \
-        xdroid_RMX1941-eng \
-        xdroid_RMX1941-user \
-        xdroid_RMX1941-userdebug
+        ssos_RMX1941-eng \
+        ssos_RMX1941-user \
+        ssos_RMX1941-userdebug
