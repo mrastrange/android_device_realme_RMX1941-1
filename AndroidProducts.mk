@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/xdroid_RMX1941.mk
+	$(LOCAL_DIR)/potato_RMX1941.mk
 
 COMMON_LUNCH_CHOICES := \
-        xdroid_RMX1941-eng \
-        xdroid_RMX1941-user \
-        xdroid_RMX1941-userdebug
+        potato_RMX1941-eng \
+        potato_RMX1941-user \
+        potato_RMX1941-userdebug
