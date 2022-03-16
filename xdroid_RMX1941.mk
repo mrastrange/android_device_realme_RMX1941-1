@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 # Inherit some common Aosp stuff
-$(call inherit-product, vendor/xdroid/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
@@ -42,7 +42,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1941
-PRODUCT_NAME := xdroid_RMX1941
+PRODUCT_NAME := lineage_RMX1941
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme C2
 PRODUCT_MANUFACTURER := realme
